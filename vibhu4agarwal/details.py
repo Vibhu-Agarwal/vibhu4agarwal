@@ -25,7 +25,7 @@ If the codebase is in alien language, I can still make contributions by document
 
 education = {'university': """Jaypee Institute of Information Technology, Noida
              - Computer Science and Engineering - Integrated (B.Tech. & M.Tech.)
-             - 2017-Present (Current Semester: IV)""",
+             - 2017-Present (Current Semester: V)""",
              'school': """St.Joseph's College, Allahabad
              - XII (I.S.C.) - 2017
              - X (I.C.S.E.) - 2015"""}
