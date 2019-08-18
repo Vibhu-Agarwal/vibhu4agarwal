@@ -180,7 +180,7 @@ def print_profile(wants_contact=False, wants_handles=False,
 def print_resume():
     print_profile(wants_contact=True, wants_handles=True,
                   wants_skills=False, wants_need=True)
-    print_education()
+    print_education(sdiv=True)
     print_open_source(sdiv=True)
     print_projects(sdiv=True)
     print_work_exp(sdiv=True)
