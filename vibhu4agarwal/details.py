@@ -5,30 +5,34 @@ def fix(string):
 profile = {'name': "Vibhu Agarwal",
            'location': "Noida, India",
            'title': "Python and Open Source Enthusiast | Web Developer",
-           'summary': """{}: Back-End Web Develoment
-{}: Web-Scraping, Python - Testing & Packaging
-{}: Machine Learning, GCP and Desktop App. Development
+           'summary': """{}: Back-End Web Development, API Development
+{}: AWS and GCP, Testing, Python Packaging
+{}: Machine Learning, Desktop Application Development
 {}: Working with projects which could help me learn something new
-{}: Summer Internships (1-2 months)""".format(fix('Primary area of work'),
-                                              fix('Greatly Involved with'),
-                                              fix('Also worked on'),
-                                              fix('Interested in'),
-                                              fix('Looking For')),
+{}: Summer Internships (8-10 weeks) 2020""".format(fix('Primary area of work'),
+                                                   fix('Greatly Involved with'),
+                                                   fix('Also worked on'),
+                                                   fix('Interested in'),
+                                                   fix('Looking For')),
            'need': """Hit me up anytime if you've got an interesting project and need help with anything.
 If the codebase is in alien language, I can still make contributions by documenting it.""",
            'skills': ['Web Development',
-                      'SQL',
+                      'API Development',
+                      'AWS',
+                      'GCP'
+                      'Git'
+                      'Testing',
                       'Machine Learning',
-                      'Python Testing',
                       'Python Packaging',
+                      'Data Structures and Algorithms'
                       'Browser and Task Automation']}
 
 education = {'university': """Jaypee Institute of Information Technology, Noida
              - Computer Science and Engineering - Integrated (B.Tech. & M.Tech.)
-             - 2017-Present (Current Semester: V)""",
+             - 2017-Present (Current Semester: V) | 7.8 C.G.P.A.""",
              'school': """St.Joseph's College, Allahabad
-             - XII (I.S.C.) - 2017
-             - X (I.C.S.E.) - 2015"""}
+             - XII (I.S.C.) - 2017 | 88%
+             - X (I.C.S.E.) - 2015 | 90%"""}
 
 contact = {'Telegram': "vibhu4agarwal",
            'Mail': "vibhu4agarwal@gmail.com"}
@@ -47,7 +51,7 @@ geeksforgeeks = {'company': "GeeksforGeeks",
                  'role': "Technical Content Scripter (Intern)",
                  'time': "03/2019 - 04/2019"}
 
-creesync = {'company': "Creesync Software", 'role': "Back-End Web Developer (Intern)", 'time': "06/2019 - Present"}
+creesync = {'company': "Creesync Software", 'role': "Back-End Web Developer (Intern)", 'time': "05/2019 - 08/2019"}
 
 work_exp = [creesync, geeksforgeeks, internity]
 
@@ -72,6 +76,10 @@ organizations = {
         'org_name': 'Developer Student Clubs',
         'role': 'Technical Coordinator',
         'location': 'JIIT, Noida'
+    },
+    'GDG': {
+        'org_name': "Google Developers' Group",
+        'role': 'GCP Quest Leader',
     }
 }
 
