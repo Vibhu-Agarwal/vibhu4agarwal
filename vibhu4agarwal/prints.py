@@ -1,5 +1,4 @@
 from .details import *
-import os
 
 DEFAULT_BG_COLOR = 40
 BAR = '\033[0;37;{bg_color}m|'.format(bg_color=DEFAULT_BG_COLOR)
@@ -8,6 +7,7 @@ DIVIDER = BAR + '---------------------------------------------------------------
 PADDING = len(DIVIDER) - (len(BAR) + len(END_BAR))
 NORMAL = 0
 BOLD = 1
+SKILLS_LINE_LENGTH = 30
 
 
 def print_divider(condition=True):
@@ -64,16 +64,18 @@ def print_summary(sdiv=False, ediv=False):
 def print_skills(sdiv=False, ediv=False):
     print_divider(sdiv)
     adjust_print('Skills:', text_style=BOLD)
-    count = 0
-    three_skills = []
+    skills_print, skills_line = '', ''
+    first_line = True
     for skill in profile['skills']:
-        three_skills.append(skill)
-        count += 1
-        if count % 3 == 0:
-            skill_string = ', '.join(three_skills)
-            three_skills.clear()
-            adjust_print(skill_string)
-            count = 0
+        skills_line += skill + ', '
+        if len(skills_line) > SKILLS_LINE_LENGTH:
+            if first_line:
+                first_line = False
+            else:
+                adjust_print(skills_print)
+            skills_print = skills_line
+            skills_line = ''
+    adjust_print(skills_print[:-2])
     print_divider(ediv)
 
 
@@ -126,6 +128,8 @@ def print_organizations(sdiv=False, ediv=False):
         adjust_print('')
         adjust_print('Organization: ' + organizations[org]['org_name'])
         adjust_print('Role        : ' + organizations[org]['role'])
+        if 'duration' in organizations[org]:
+            adjust_print('Duration    : ' + organizations[org]['duration'])
         if 'location' in organizations[org]:
             adjust_print('Location    : ' + organizations[org]['location'])
     print_divider(ediv)

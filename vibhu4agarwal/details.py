@@ -19,12 +19,12 @@ If the codebase is in alien language, I can still make contributions by document
            'skills': ['Web Development',
                       'API Development',
                       'AWS',
-                      'GCP'
-                      'Git'
+                      'GCP',
+                      'Git',
                       'Testing',
                       'Machine Learning',
                       'Python Packaging',
-                      'Data Structures and Algorithms'
+                      'Data Structures and Algorithms',
                       'Browser and Task Automation']}
 
 education = {'university': """Jaypee Institute of Information Technology, Noida
@@ -72,15 +72,17 @@ open_source = {
 }
 
 organizations = {
-    'DSC': {
-        'org_name': 'Developer Student Clubs',
-        'role': 'Technical Coordinator',
-        'location': 'JIIT, Noida'
-    },
     'GDG': {
         'org_name': "Google Developers' Group",
         'role': 'GCP Quest Leader',
-    }
+        'duration': 'July 2019 - Present',
+    },
+    'DSC': {
+        'org_name': 'Developer Student Clubs',
+        'role': 'Technical Coordinator',
+        'duration': 'August 2018 - Present',
+        'location': 'JIIT, Noida'
+    },
 }
 
 projects = {
@@ -88,7 +90,7 @@ projects = {
         'name': 'Ministry of Statistics and Programme Implementation (MOSPI) - Website',
         'desc': ['A Django powered Website made for MOSPI to automate the tasks'
                  ' and reduce loads of their manual work to read the excel sheets, re-'
-                 ' plot them, make calculations, report statements and view insights.',
+                 'plot them, make calculations, report statements and view insights.',
                  'Developed during Smart India Hackathon 2019'],
         'date': '03/2019',
         'link': None
